@@ -141,6 +141,9 @@ class App extends Component {
           prevSrc={
             images[(this.state.index + images.length - 1) % images.length]
           }
+          onImageRotate={degree => {
+            console.log('new degree', degree);
+          }}
           mainSrcThumbnail={thumbs[this.state.index]}
           nextSrcThumbnail={thumbs[(this.state.index + 1) % images.length]}
           prevSrcThumbnail={

@@ -10,6 +10,7 @@ A flexible lightbox component for displaying images in a React project.
 
 Features
 
+- Image Rotate
 - Keyboard shortcuts (with rate limiting)
 - Image Zoom
 - Flexible rendering using src values assigned on the fly
@@ -89,6 +90,7 @@ Play with the code on the [example on CodeSandbox](https://codesandbox.io/s/l9n3
 | onCloseRequest<br/>_(required)_ |  func  | Close window event. Should change the parent state such that the lightbox is not rendered                                                                     |
 | onMovePrevRequest               |  func  | Move to previous image event. Should change the parent state such that `props.prevSrc` becomes `props.mainSrc`, `props.mainSrc` becomes `props.nextSrc`, etc. |
 | onMoveNextRequest               |  func  | Move to next image event. Should change the parent state such that `props.nextSrc` becomes `props.mainSrc`, `props.mainSrc` becomes `props.prevSrc`, etc.     |
+| onImageRotate                   |  func  | Image rotate event. The new degree`(type:number)` of rotation will be passed into this callback                                                               |
 | onImageLoad                     |  func  | Called when an image loads.<div>`(imageSrc: string, srcType: string, image: object): void`</div>                                                              |
 | onImageLoadError                |  func  | Called when an image fails to load.<div>`(imageSrc: string, srcType: string, errorEvent: object): void`</div>                                                 |
 | imageLoadErrorMessage           |  node  | What is rendered in place of an image if it fails to load. Centered in the lightbox viewport. Defaults to the string `"This image failed to load"`.           |
@@ -108,6 +110,7 @@ Play with the code on the [example on CodeSandbox](https://codesandbox.io/s/l9n3
 | imagePadding                    | number | Padding (px) between the edge of the window and the lightbox. Defaults to `10`.                                                                               |
 | clickOutsideToClose             |  bool  | When `true`, clicks outside of the image close the lightbox. Defaults to `true`.                                                                              |
 | enableZoom                      |  bool  | Set to `false` to disable zoom functionality and hide zoom buttons. Defaults to `true`.                                                                       |
+| enableRotate                    |  bool  | Set to `false` to disable rotate functionality and hide rotate buttons. Defaults to `true`.                                                                   |
 | wrapperClassName                | string | Class name which will be applied to root element after React Modal                                                                                            |
 | nextLabel                       | string | `aria-label` set on the 'Next' button. Defaults to `'Next image'`.                                                                                            |
 | prevLabel                       | string | `aria-label` set on the 'Previous' button. Defaults to `'Previous image'`.                                                                                    |

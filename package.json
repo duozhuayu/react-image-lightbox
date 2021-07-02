@@ -1,6 +1,6 @@
 {
-  "name": "react-image-lightbox",
-  "version": "5.1.1",
+  "name": "@F2E/react-image-lightbox",
+  "version": "5.2.0",
   "description": "A lightbox component for React.js",
   "scripts": {
     "build": "rollup -c",
@@ -10,7 +10,7 @@
     "start": "parcel examples/cats/index.html",
     "lint": "eslint .",
     "prettier": "prettier --write \"./**/*.{md,js,css}\" \"!./{build,dist}/**\" \"!./style.css*\"",
-    "prepublishOnly": "yarn run lint && yarn run test && yarn run build",
+    "prepublishOnly": "yarn run lint  && yarn run build",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "deploy": "yarn run build:demo && gh-pages -d build",
@@ -27,9 +27,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/frontend-collective/react-image-lightbox.git"
+    "url": "https://github.com/duozhuayu/react-image-lightbox.git"
   },
-  "homepage": "https://frontend-collective.github.io/react-image-lightbox",
+  "homepage": "https://github.com/duozhuayu/react-image-lightbox",
   "bugs": "https://github.com/frontend-collective/react-image-lightbox/issues",
   "authors": [
     "Chris Fritz"
