@@ -1,6 +1,6 @@
 {
   "name": "react-image-lightbox",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "A lightbox component for React.js",
   "scripts": {
     "build": "rollup -c",
@@ -25,6 +25,9 @@
     "style.css",
     "style.css.map"
   ],
+  "publishConfig": {
+    "registry": "http://npm.duozhuayu.net"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/frontend-collective/react-image-lightbox.git"
